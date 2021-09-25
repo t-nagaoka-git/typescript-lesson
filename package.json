@@ -1,0 +1,22 @@
+{
+  "name": "typescript-lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/t-nagaoka-git/typescript-lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-nagaoka-git/typescript-lesson/issues"
+  },
+  "homepage": "https://github.com/t-nagaoka-git/typescript-lesson#readme",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}
