@@ -15,6 +15,6 @@ const person = {
   },
   age: 21,
 };
-const fruits = ['Apple', 'Banana', 'Grape']
+const fruits = ['Apple', 'Banana', 'Grape'];
 
-console.log(person);
+const book: [string, number, boolean] = ['business', 1500, false];
