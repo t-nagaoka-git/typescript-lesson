@@ -18,3 +18,17 @@ const person = {
 const fruits = ['Apple', 'Banana', 'Grape'];
 
 const book: [string, number, boolean] = ['business', 1500, false];
+
+enum CoffeeSize {
+  SHORT,
+  TALL,
+  GRANDE,
+  VENTI,
+}
+
+const coffee = {
+  hot: true,
+  size: CoffeeSize.TALL,
+};
+coffee.size = CoffeeSize.SHORT;
+console.log(CoffeeSize.SHORT);
