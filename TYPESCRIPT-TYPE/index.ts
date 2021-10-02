@@ -31,7 +31,6 @@ const coffee = {
   size: CoffeeSize.TALL,
 };
 coffee.size = CoffeeSize.SHORT;
-console.log(CoffeeSize.SHORT);
 
 let anything: any = true;
 anything = 'hello';
@@ -58,3 +57,10 @@ const cloth: {
 function add(num1: number, num2: number): number {
   return num1 + num2;
 }
+
+function sayHello(): void {
+  console.log('Hello!');
+}
+
+console.log(sayHello());
+let tmp: undefined;

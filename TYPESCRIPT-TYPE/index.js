@@ -3,7 +3,7 @@ var count = 10;
 var float = 3.14;
 var negative = -0.12;
 var single = 'hello';
-var double = "hello";
+var double = 'hello';
 var back = "hello";
 var hello;
 hello = 'hello';
@@ -28,7 +28,6 @@ var coffee = {
     size: CoffeeSize.TALL
 };
 coffee.size = CoffeeSize.SHORT;
-console.log(CoffeeSize.SHORT);
 var anything = true;
 anything = 'hello';
 anything = ['hello', 33, true];
@@ -47,3 +46,8 @@ var cloth = {
 function add(num1, num2) {
     return num1 + num2;
 }
+function sayHello() {
+    console.log('Hello!');
+}
+console.log(sayHello());
+var tmp;
