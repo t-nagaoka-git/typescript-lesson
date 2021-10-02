@@ -3,7 +3,7 @@ let count = 10;
 let float = 3.14;
 let negative = -0.12;
 let single = 'hello';
-let double = 'hello';
+let double = "hello";
 let back = `hello`;
 let hello: string;
 hello = 'hello';
@@ -44,11 +44,12 @@ banana = anything;
 let unionType: number | string = 10;
 let unionTypes: (number | string)[] = [21, 'hello'];
 
+type ClothSize = 'small' | 'medium' | 'large';
 const apple = 'apple';
-let clothSize: 'small' | 'medium' | 'large' = 'large';
+let clothSize: ClothSize = 'large';
 const cloth: {
   color: string;
-  size: 'small' | 'medium' | 'large';
+  size: ClothSize;
 } = {
   color: 'white',
   size: 'medium',

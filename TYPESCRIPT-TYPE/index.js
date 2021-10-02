@@ -3,7 +3,7 @@ var count = 10;
 var float = 3.14;
 var negative = -0.12;
 var single = 'hello';
-var double = 'hello';
+var double = "hello";
 var back = "hello";
 var hello;
 hello = 'hello';
@@ -29,3 +29,18 @@ var coffee = {
 };
 coffee.size = CoffeeSize.SHORT;
 console.log(CoffeeSize.SHORT);
+var anything = true;
+anything = 'hello';
+anything = ['hello', 33, true];
+anything = {};
+anything.fjiafjaj = 'faijfi';
+var banana = 'banana';
+banana = anything;
+var unionType = 10;
+var unionTypes = [21, 'hello'];
+var apple = 'apple';
+var clothSize = 'large';
+var cloth = {
+    color: 'white',
+    size: 'medium'
+};
