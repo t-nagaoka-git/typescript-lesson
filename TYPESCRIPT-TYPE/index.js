@@ -55,3 +55,10 @@ var anotherAdd = function (num1, num2) {
     return num1 + num2;
 };
 var doubleNumber = function (num) { return num * 2; };
+function doubleAndHandle(num, cb) {
+    var doubleNum = cb(num * 2);
+    console.log(doubleNum);
+}
+doubleAndHandle(21, function (doubleNum) {
+    return doubleNum;
+});
