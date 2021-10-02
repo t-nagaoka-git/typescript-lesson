@@ -47,9 +47,9 @@ function add(num1, num2) {
     return num1 + num2;
 }
 function sayHello() {
-    console.log('Hello!');
+    // console.log('Hello!');
 }
-console.log(sayHello());
+// console.log(sayHello());
 var tmp;
 var anotherAdd = function (num1, num2) {
     return num1 + num2;
@@ -57,7 +57,7 @@ var anotherAdd = function (num1, num2) {
 var doubleNumber = function (num) { return num * 2; };
 function doubleAndHandle(num, cb) {
     var doubleNum = cb(num * 2);
-    console.log(doubleNum);
+    // console.log(doubleNum);
 }
 doubleAndHandle(21, function (doubleNum) {
     return doubleNum;
@@ -72,3 +72,7 @@ text = anyInput;
 if (typeof unknownInput === 'string') {
     text = unknownInput;
 }
+function error(message) {
+    throw new Error(message);
+}
+console.log(error('This is an error'));

@@ -59,10 +59,10 @@ function add(num1: number, num2: number): number {
 }
 
 function sayHello(): void {
-  console.log('Hello!');
+  // console.log('Hello!');
 }
 
-console.log(sayHello());
+// console.log(sayHello());
 let tmp: undefined;
 
 const anotherAdd: (n1: number, n2: number) => number = function (num1, num2) {
@@ -72,7 +72,7 @@ const doubleNumber: (num: number) => number = (num) => num * 2;
 
 function doubleAndHandle(num: number, cb: (num: number) => number): void {
   const doubleNum = cb(num * 2);
-  console.log(doubleNum);
+  // console.log(doubleNum);
 }
 doubleAndHandle(21, (doubleNum) => {
   return doubleNum;
@@ -88,3 +88,8 @@ text = anyInput;
 if (typeof unknownInput === 'string') {
   text = unknownInput;
 }
+
+function error(message: string): never {
+  throw new Error(message);
+}
+console.log(error('This is an error'));
