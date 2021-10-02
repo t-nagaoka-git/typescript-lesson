@@ -1,5 +1,5 @@
 let hasValue = true;
-let count = 10;
+let count = 11;
 let float = 3.14;
 let negative = -0.12;
 let single = 'hello';
