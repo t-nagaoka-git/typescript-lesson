@@ -3,7 +3,7 @@ var count = 10;
 var float = 3.14;
 var negative = -0.12;
 var single = 'hello';
-var double = 'hello';
+var double = "hello";
 var back = "hello";
 var hello;
 hello = 'hello';
@@ -51,3 +51,7 @@ function sayHello() {
 }
 console.log(sayHello());
 var tmp;
+var anotherAdd = function (num1, num2) {
+    return num1 + num2;
+};
+var doubleNumber = function (num) { return num * 2; };
