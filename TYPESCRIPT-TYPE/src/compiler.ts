@@ -1,3 +1,2 @@
-let hi = 'hi';
-// hi
+let hi = 29;
 console.log(hi.toUpperCase());
