@@ -4,7 +4,7 @@ let count = 11;
 let float = 3.14;
 let negative = -0.12;
 let single = 'hello';
-let double = "hello";
+let double = 'hello';
 let back = `hello`;
 let hello;
 hello = 'hello';
@@ -58,7 +58,7 @@ const anotherAdd = function (num1, num2) {
 const doubleNumber = (num) => num * 2;
 function doubleAndHandle(num, cb) {
     const doubleNum = cb(num * 2);
-    // console.log(doubleNum);
+    console.log(doubleNum);
 }
 doubleAndHandle(21, (doubleNum) => {
     return doubleNum;

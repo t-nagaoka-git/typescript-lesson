@@ -1,6 +1,9 @@
 "use strict";
+let globalHello = 'hello';
 function echo(message) {
-    return message;
+    if (message) {
+        return message;
+    }
 }
 let implicitAny;
 implicitAny = 'implicitAny';

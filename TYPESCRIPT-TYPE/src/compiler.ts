@@ -1,5 +1,8 @@
-function echo(message: string): string | null {
-  return message;
+let globalHello = 'hello';
+function echo(message: string): string | undefined {
+  if (message) {
+    return message;
+  }
 }
 
 let implicitAny;
