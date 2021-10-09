@@ -1,8 +1,9 @@
 "use strict";
-class Person {
-    constructor(initName) {
+var Person = /** @class */ (function () {
+    function Person(initName) {
         this.name = initName;
     }
-}
-const quill = new Person('Quill');
+    return Person;
+}());
+var quill = new Person('Quill');
 console.log(quill);
