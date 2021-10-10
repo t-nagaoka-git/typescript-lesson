@@ -7,11 +7,11 @@ class Person {
         console.log(`Hello! My name is ${this.name}`);
     }
 }
+let person2;
 const quill = new Person('Quill');
 quill.greeting();
 const anotherQuill = {
     name: 'anotherQuill',
-    anotherGreeting: quill.greeting,
+    greeting: quill.greeting,
 };
-anotherQuill.anotherGreeting();
-console.log(quill);
+anotherQuill.greeting();

@@ -5,15 +5,15 @@ class Person {
     this.name = initName;
   }
 
-  greeting(this: {name: string}) {
+  greeting(this: Person) {
     console.log(`Hello! My name is ${this.name}`);
   }
 }
+let person2: Person;
 const quill = new Person('Quill');
 quill.greeting();
 const anotherQuill = {
   name: 'anotherQuill',
-  anotherGreeting: quill.greeting,
+  greeting: quill.greeting,
 };
-anotherQuill.anotherGreeting();
-console.log(quill);
+anotherQuill.greeting();
