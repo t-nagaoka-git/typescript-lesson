@@ -8,14 +8,19 @@ addFunc = (n1: number, n2: number) => {
 };
 
 interface Nameable {
-  name: string;
+  name?: string;
+  nickName?: string;
 }
+const nameable: Nameable = {
+  name: 'Quill',
+  nickName: 'Quilla',
+};
 interface Human extends Nameable {
   age: number;
   greeting(message: string): void;
 }
 class Developer implements Human {
-  constructor(public name: string, public age: number, public experience: number) {}
+  constructor(public age: number, public experience: number, public initName?: string) {}
   greeting(message: string) {
     console.log(message);
   }
@@ -28,4 +33,8 @@ const tmpDeveloper = {
     console.log(message);
   },
 };
-const user: Human = tmpDeveloper;
+const user: Human = new Developer(38, 3, 'Quill');
+if (user.name) {
+  user.name.toUpperCase();
+}
+console.log(user.name);
