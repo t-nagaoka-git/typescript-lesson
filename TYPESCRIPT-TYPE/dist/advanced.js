@@ -49,3 +49,7 @@ function havePet(pet) {
     }
 }
 havePet(new Bird());
+// const input = document.getElementById('input') as HTMLInputElement;
+// const input = <HTMLInputElement>document.getElementById('input');
+// input.value = 'initial input value';
+document.getElementById('input').value = 'initial input value';
