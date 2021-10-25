@@ -54,3 +54,7 @@ const input = document.getElementById('input');
 // const input = <HTMLInputElement>document.getElementById('input');
 input.value = 'initial input value';
 document.getElementById('input').value = 'initial input value';
+const designer = {
+    name: 'Quill',
+    role: 'web',
+};
