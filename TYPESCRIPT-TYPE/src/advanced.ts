@@ -62,7 +62,8 @@ function havePet(pet: Pet) {
 }
 havePet(new Bird());
 
-// const input = document.getElementById('input') as HTMLInputElement;
+const input = document.getElementById('input') as HTMLInputElement;
+// const input = document.getElementById('input')!; ! マークで null ではないことを宣言する
 // const input = <HTMLInputElement>document.getElementById('input');
-// input.value = 'initial input value';
+input.value = 'initial input value';
 (document.getElementById('input') as HTMLInputElement).value = 'initial input value';
