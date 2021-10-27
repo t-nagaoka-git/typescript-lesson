@@ -94,3 +94,4 @@ const downloadedData: DownloadedData = {
 };
 console.log(downloadedData.user?.name?.first);
 const userData = downloadedData.user ?? 'no-user';
+type id = DownloadedData['id'];
