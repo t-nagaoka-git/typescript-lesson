@@ -95,3 +95,18 @@ const downloadedData: DownloadedData = {
 console.log(downloadedData.user?.name?.first);
 const userData = downloadedData.user ?? 'no-user';
 type id = DownloadedData['id'];
+class AdvancedPerson {
+  name: string = 'Peter';
+  age: number = 35;
+}
+enum Color {
+  RED,
+  BLUE,
+}
+class AdvancedCar {
+  name: string = 'Prius';
+  age: number = 5;
+}
+let target = new AdvancedPerson();
+let source = new AdvancedCar();
+target = source;
