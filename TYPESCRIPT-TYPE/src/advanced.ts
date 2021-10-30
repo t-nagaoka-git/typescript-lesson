@@ -134,5 +134,5 @@ class AdvancedCar {
 let target = new AdvancedPerson();
 let source = new AdvancedCar();
 target = source;
-function advancedFn(...args: [number, string, boolean?, ...number[]]) {}
-advancedFn(0, 'hi', true);
+function advancedFn(...args: readonly number[]) {}
+advancedFn(0, 1);
