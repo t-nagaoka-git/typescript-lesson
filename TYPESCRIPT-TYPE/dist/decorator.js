@@ -29,13 +29,24 @@ function Component(template, selector) {
         };
     };
 }
+function PropertyLogging(target, propertyKey) {
+    console.log('propertyLogging');
+    console.log(target);
+    console.log(propertyKey);
+}
 let User = class User {
     constructor(age) {
         this.age = age;
         this.name = 'Quill';
         console.log('User was created!');
     }
+    greeting() {
+        console.log('Hello!');
+    }
 };
+__decorate([
+    PropertyLogging
+], User.prototype, "name", void 0);
 User = __decorate([
     Logging('Logging User'),
     Component('<h1>{{ name }}</h1>', '#app')
