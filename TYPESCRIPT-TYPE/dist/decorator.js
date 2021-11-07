@@ -5,6 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 function Logging(message) {
     console.log('Logging Factory');
     return function (constructor) {
@@ -53,6 +56,12 @@ function AccessorLogging(target, propertyKey, descriptor) {
     console.log(propertyKey);
     console.log(descriptor);
 }
+function ParameterLogging(target, propertyKey, parameterIndex) {
+    console.log('ParameterLogging');
+    console.log(target);
+    console.log(propertyKey);
+    console.log(parameterIndex);
+}
 let User = class User {
     constructor(_age) {
         this._age = _age;
@@ -65,7 +74,7 @@ let User = class User {
     set age(value) {
         this._age = value;
     }
-    greeting() {
+    greeting(message) {
         console.log('Hello!');
     }
 };
@@ -77,7 +86,8 @@ __decorate([
 ], User.prototype, "age", null);
 __decorate([
     enumerable(false),
-    MethodLogging
+    MethodLogging,
+    __param(0, ParameterLogging)
 ], User.prototype, "greeting", null);
 User = __decorate([
     Logging('Logging User'),
