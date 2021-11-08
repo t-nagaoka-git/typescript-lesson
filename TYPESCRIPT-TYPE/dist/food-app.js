@@ -2,6 +2,10 @@
 class Score {
 }
 class Food {
+    constructor(element) {
+        this.element = element;
+        element.addEventListener;
+    }
 }
 class Foods {
     constructor() {
