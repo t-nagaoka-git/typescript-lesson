@@ -10,3 +10,22 @@ namespace myApp {
   }
 }
 let nameable: myApp.Nameable;
+
+// let name: string;
+// function name() {}
+// enum name {}
+// class name {}
+// interface name {
+//   first(): void;
+// }
+// interface name {
+//   first(): number;
+// }
+// let tmp: name;
+// type name = {};
+namespace name {
+  const first: string = 'Peter';
+}
+namespace name {
+  const first: string = 'Peter';
+}
