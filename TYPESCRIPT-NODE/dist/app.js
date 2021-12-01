@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res, next) => {
     res.send('<h1>Hello</h1>');
 });
-// app.use((err, req, res, next) => {
-//   next();
-// });
+app.use((err, req, res, next) => {
+    next();
+});
 app.listen(3000);
